@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="HandheldFriendly" content="true" />
+	<link rel="shortcut icon" href="./i.imgur.com/Ztfil9T.png">
+    <title>Probation Completion checking tool</title>
+    <style type="text/css">
+      * {
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+        *behavior:url(js/boxsizing.htc);
+      }
+      html, body { width:100%; margin:0px; padding:0px; }
+      body {
+        background:  rgb(45, 45, 45);
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: auto;
+        
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        color: #707070;
+        text-align:center;
+        word-break:break-word;
+      }
+      .form-all {
+        background:  rgb(34, 34, 34);
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: auto;
+        
+        width: 100%;
+        max-width: 500px;
+        margin: 36px auto;
+        padding: 19px 29px ;
+        -webkit-box-shadow: 0 4px 4px -1px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 4px -1px rgba(0,0,0,0.1);
+      }
+	  .back-button {
+    border: none !important;
+    box-shadow: none !important;
+    text-shadow: none;
+    outline: none;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    height: auto !important;
+    text-transform: uppercase;
+    width: 90px;
+    font-size: 1.15em;
+    padding: 12px 18px;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-width: 0px !important;
+    border-style: solid !important;
+    color: #b64240 !important;
+    background: #222222;
+    box-shadow: none;
+    text-shadow: none;
+	  }
+	  .back-button:hover {
+    background : #121212!important;
+    box-shadow : none;
+	  }
+      #footer {
+        text-align: left;
+        margin: -35px auto 0;
+        font-size: 14px;
+        width: 500px;
+      }
+
+      #footer > div {
+        box-shadow: 0 4px 4px -1px rgba(0,0,0,0.1);
+        background-color: #fff;
+        padding: 12px 15px;
+        overflow: hidden;
+      }
+
+      #footer > div > div { padding: 10px 0 10px 5px }
+
+      .thankYouPage-footerJFLink span { display: none }
+#stage div #repRes {
+}
+
+      @media screen and (max-width: 500px), screen and (max-device-width: 768px) and (orientation: portrait), screen and (max-device-width: 415px) and (orientation: landscape) {
+        body {
+          background-color: rgb(34, 34, 34);
+        }
+        .form-all {
+          margin: 12px 3%;
+          border: 0;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          width: 94%;
+          max-width: initial;
+        }
+
+        .thankYouPage-footerJFLink img { display: none }
+        .thankYouPage-footerJFLink span {
+    display: inline-block;
+}
+
+        #footer {
+          width: 94%;
+          margin-top: 0;
+        }
+        #footer > div.summer-sale-2018 > div a { padding: 3px 0 0 1px; font-size: 10px; }
+        #footer > div > div { padding: 3px 0 0 5px; font-size: 12px; }
+
+
+        #footer > div > div span { display: block }
+        #footer > div > div span.footer-dash { display: none }
+      }
+      @media print {
+       body {
+        background: white;
+        color: black;
+       }
+
+       .form-all {
+        margin:0 auto;
+        max-width: 100%;
+        box-shadow: none;
+        background:white;
+        float:none;
+        width: 500px;
+       } 
+
+       img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+       }
+
+      }
+    </style>
+    <style type="text/css">
+    
+.form-label.form-label-auto {
+        
+      display: block;
+      float: none;
+      text-align: left;
+      width: 100%;
+    
+      }
+    </style>
+  </head>
+  <body class="thankyou">
+    <div style="position: relative" id="stage" class="form-all">
+      <p style="text-align:center;"><img id="dmgincImage" src="./i.imgur.com/di-loading.png" alt="" width="215" height="128" /></p><div style="text-align:center;"><h1 id="repRes" style="text-align:center;">Loading reputation...</h1></div>
+        <div id="cid_2" class="form-input-wide">
+          <div style="position: absolute; top: 0; left: 0;" data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+            <button id="back" onclick="goBack()" class="back-button form-submit-button" data-component="button" data-content="">
+              BACK
+            </button>
+          </div>
+        </div>
+    </div>
+	<script>
+     function goBack() {
+     window.location.href = './index.html'
+	 }
+     </script>
+	<script src="bundle.js"></script>
+  </body>
+</html>
